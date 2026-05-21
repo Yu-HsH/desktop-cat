@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Pixel pet house">
+  <rect width="160" height="160" fill="none"/>
+  <g shape-rendering="crispEdges">
+    <path d="M28 74h104v66H28z" fill="#f3c77a"/>
+    <path d="M36 82h88v50H36z" fill="#ffd995"/>
+    <path d="M20 74h120L80 24z" fill="#ad4c34"/>
+    <path d="M32 72h96L80 34z" fill="#d45f3d"/>
+    <path d="M20 74h120v10H20z" fill="#713521"/>
+    <path d="M68 98h24v42H68z" fill="#6b3f2a"/>
+    <path d="M74 104h12v36H74z" fill="#4d2d1e"/>
+    <path d="M46 92h16v16H46zM98 92h16v16H98z" fill="#79b8c8"/>
+    <path d="M50 96h8v8h-8zM102 96h8v8h-8z" fill="#c8f2ff"/>
+    <path d="M28 140h104v8H28z" fill="#8a5a37"/>
+    <path d="M54 118h14v8H54zM92 118h14v8H92z" fill="#b87a45"/>
+    <path d="M76 122h8v8h-8z" fill="#e0aa5e"/>
+  </g>
+</svg>

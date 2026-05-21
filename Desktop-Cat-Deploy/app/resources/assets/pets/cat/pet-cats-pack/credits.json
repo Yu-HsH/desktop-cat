@@ -1,0 +1,14 @@
+{
+  "assets": [
+    {
+      "id": "pet-cats-pack",
+      "name": "Pet Cats Pack",
+      "creator": "LuizMelo",
+      "license": "Creative Commons Zero v1.0 Universal",
+      "licenseShortName": "CC0-1.0",
+      "localLicenseFile": "assets/pets/cat/pet-cats-pack/License.txt",
+      "sourceUrl": "https://luizmelo.itch.io/pet-cat-pack",
+      "notes": "Original pack copied into assets/pets/cat/pet-cats-pack and configured as selectable cat skins."
+    }
+  ]
+}

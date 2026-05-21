@@ -1,0 +1,110 @@
+{
+  "packId": "pet-cats-pack",
+  "packName": "Pet Cats Pack",
+  "defaultSkin": "cat-1",
+  "render": {
+    "displayWidth": 160,
+    "displayHeight": 160,
+    "pixelated": true
+  },
+  "skins": {
+    "cat-1": {
+      "basePath": "cat-1",
+      "filePrefix": "Cat-1"
+    },
+    "cat-2": {
+      "basePath": "cat-2",
+      "filePrefix": "Cat-2"
+    },
+    "cat-3": {
+      "basePath": "cat-3",
+      "filePrefix": "Cat-3"
+    },
+    "cat-4": {
+      "basePath": "cat-4",
+      "filePrefix": "Cat-4"
+    },
+    "cat-5": {
+      "basePath": "cat-5",
+      "filePrefix": "Cat-5"
+    },
+    "cat-6": {
+      "basePath": "cat-6",
+      "filePrefix": "Cat-6"
+    }
+  },
+  "states": {
+    "idle": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Idle.png",
+      "frameCount": 10,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 10
+    },
+    "walk": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Walk.png",
+      "frameCount": 8,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 8
+    },
+    "run": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Run.png",
+      "frameCount": 8,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 10
+    },
+    "speak": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Meow.png",
+      "frameCount": 4,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 6
+    },
+    "sleep": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Sleeping1.png",
+      "frameCount": 1,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 1
+    },
+    "sit": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Sitting.png",
+      "frameCount": 1,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 1
+    },
+    "petting": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Licking 1.png",
+      "frameCount": 5,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 8
+    },
+    "stretch": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Stretching.png",
+      "frameCount": 13,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 8
+    },
+    "lie": {
+      "type": "spritesheet",
+      "file": "{filePrefix}-Laying.png",
+      "frameCount": 8,
+      "frameWidth": 50,
+      "frameHeight": 50,
+      "fps": 8
+    }
+  }
+}
