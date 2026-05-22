@@ -1,0 +1,80 @@
+{
+  "name": "desktop-cat-electron",
+  "productName": "Desktop Cat",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A transparent Electron desktop pet MVP built with React and Vite.",
+  "main": "electron/main.js",
+  "build": {
+    "appId": "com.roeehds2.desktopcat",
+    "productName": "Desktop Cat",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "src/data/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "assets",
+        "to": "assets"
+      }
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/**/*.node",
+      "node_modules/@nut-tree*/**/*",
+      "node_modules/@nut-tree-fork/**/*"
+    ],
+    "win": {
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Desktop Cat"
+    },
+    "portable": {
+      "artifactName": "Desktop-Cat-${version}-portable.exe"
+    },
+    "artifactName": "Desktop-Cat-${version}-${arch}.${ext}"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:renderer": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node scripts/start.mjs",
+    "generate:placeholders": "node scripts/generate-placeholders.mjs",
+    "dist": "npm run build && electron-builder",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:win:portable": "npm run build && electron-builder --win portable",
+    "dist:win:installer": "npm run build && electron-builder --win nsis"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "@vitejs/plugin-react": "^6.0.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "vite": "^8.0.13"
+  },
+  "devDependencies": {
+    "electron": "^42.2.0",
+    "electron-builder": "^26.8.1"
+  }
+}

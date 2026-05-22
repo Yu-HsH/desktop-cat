@@ -1,0 +1,21 @@
+{
+  "window": {
+    "width": 160,
+    "height": 160
+  },
+  "hitbox": {
+    "x": 0,
+    "y": 0,
+    "width": 160,
+    "height": 160
+  },
+  "defaultSkin": "default",
+  "sprite": {
+    "src": "/assets/house/house.svg",
+    "width": 160,
+    "height": 160
+  },
+  "speech": {
+    "durationMs": 1800
+  }
+}

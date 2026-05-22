@@ -1,0 +1,62 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+release/
+release*/
+out/
+build/
+*.exe
+*.msi
+*.dmg
+*.AppImage
+*.blockmap
+
+# archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# local app/user data
+.local-appdata/
+local-appdata/
+settings.json
+user-settings.json
+desktop-cat-settings.json
+*.local.json
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# cache
+.npm-cache/
+npm-cache/
+.cache/
+.vite/
+.eslintcache
+.electron-cache/
+.electron-builder-cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+
+# python/cache
+__pycache__/
+*.pyc

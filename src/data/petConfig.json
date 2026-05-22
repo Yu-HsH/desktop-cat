@@ -1,0 +1,181 @@
+{
+  "window": {
+    "width": 160,
+    "height": 160
+  },
+  "hitbox": {
+    "x": 0,
+    "y": 0,
+    "width": 160,
+    "height": 160
+  },
+  "activeSkin": {
+    "pack": "pet-cats-pack",
+    "skin": "cat-1"
+  },
+  "settings": {
+    "saveDebounceMs": 500
+  },
+  "modes": {
+    "quietMode": {
+      "defaultEnabled": false
+    },
+    "mischievousMode": {
+      "enabled": false,
+      "chance": 0,
+      "plannedStates": ["idle", "walk", "run", "sit", "stretch", "yawn", "lie"]
+    }
+  },
+  "mischief": {
+    "enabled": false,
+    "chance": 0.18,
+    "cooldownMs": 12000,
+    "runSpeedPixelsPerSecond": 160,
+    "durationMs": {
+      "min": 1800,
+      "max": 4200
+    },
+    "allowedActions": ["dash", "chaseCursor", "teaseBubble", "poop"],
+    "cursorOffset": {
+      "x": 80,
+      "y": 40
+    },
+    "messages": [
+      "\uC77C \uB108\uBB34 \uC5F4\uC2EC\uD788 \uD558\uB294 \uAC70 \uC544\uB0D0?",
+      "\uC7A0\uAE50 \uC26C\uC790",
+      "\uB098 \uBD10\uC918",
+      "\uB0D0\uC544\uC544",
+      "\uB9C8\uC6B0\uC2A4 \uB0B4\uB194",
+      "\uC9D1\uC0AC\uC57C!",
+      "\uB180\uC544\uC918!",
+      "\uC7A1\uC558\uB2E4!",
+      "\uBB50\uD574?",
+      "\uB098\uB791 \uB180\uC790!",
+      "\uC26C\uB294 \uC2DC\uAC04!"
+    ]
+  },
+  "footprints": {
+    "enabled": true,
+    "maxCount": 45,
+    "lifetimeMs": 3000,
+    "walkDistancePx": 70,
+    "runDistancePx": 38,
+    "walkCooldownMs": 500,
+    "runCooldownMs": 220,
+    "mischiefMultiplier": 0.75,
+    "quietMultiplier": 1.8,
+    "window": {
+      "width": 32,
+      "height": 32
+    }
+  },
+  "foodReaction": {
+    "arrivalDistancePx": 60,
+    "eatDurationMs": 1500,
+    "messages": [
+      "\uAC04\uC2DD\uC774\uB2E4!",
+      "\uB0E0\uB0E0",
+      "\uB9DB\uC788\uACA0\uB2E4\uB0E5!"
+    ]
+  },
+  "windowMischief": {
+    "enabled": false,
+    "cooldownMs": 120000,
+    "allowedActions": ["minimizeForeground", "restoreRandomMinimized"],
+    "blacklistTitles": ["Visual Studio Code", "IntelliJ", "Eclipse", "Chrome", "\uD130\uBBF8\uB110"]
+  },
+  "drag": {
+    "clickThresholdPixels": 5
+  },
+  "movement": {
+    "speedPixelsPerSecond": 45,
+    "movingStates": ["walk", "run"],
+    "maxIpcFps": 30,
+    "minMoveDeltaPixels": 1,
+    "directionChangeEveryMs": {
+      "min": 5000,
+      "max": 12000
+    }
+  },
+  "animation": {
+    "defaultFps": 7,
+    "fpsByState": {
+      "idle": 5,
+      "walk": 8,
+      "sleep": 3,
+      "pet": 9,
+      "speak": 5,
+      "dragged": 5,
+      "sit": 5,
+      "stretch": 5,
+      "yawn": 5
+    }
+  },
+  "stateMachine": {
+    "idleDuration": {
+      "minMs": 6000,
+      "maxMs": 14000
+    },
+    "walkDuration": {
+      "minMs": 8000,
+      "maxMs": 18000
+    },
+    "sleepDuration": {
+      "minMs": 20000,
+      "maxMs": 45000
+    },
+    "pettingDurationMs": 2200,
+    "sleepChance": 0.12,
+    "restStates": {
+      "sit": {
+        "chance": 0.08,
+        "duration": {
+          "minMs": 2400,
+          "maxMs": 5200
+        }
+      },
+      "stretch": {
+        "chance": 0.03,
+        "duration": {
+          "minMs": 1200,
+          "maxMs": 2200
+        }
+      },
+      "yawn": {
+        "chance": 0.02,
+        "duration": {
+          "minMs": 1200,
+          "maxMs": 2200
+        }
+      },
+      "lie": {
+        "chance": 0.04,
+        "duration": {
+          "minMs": 3200,
+          "maxMs": 7000
+        }
+      }
+    }
+  },
+  "speech": {
+    "durationMs": 3800,
+    "chance": 0.15,
+    "lines": [
+      "\uB0D0\uC559",
+      "\uC624\uB298\uB3C4 \uD654\uC774\uD305",
+      "\uAC04\uC2DD?",
+      "\uC5EC\uAE30 \uC88B\uC544",
+      "\uC870\uAE08\uB9CC \uC26C\uB798"
+    ],
+    "petLines": [
+      "\uC88B\uC544!",
+      "\uACE8\uACE8\uACE8",
+      "\uB354 \uC4F0\uB2E4\uB4EC\uC5B4\uC918",
+      "\uD589\uBCF5\uD574"
+    ]
+  },
+  "effects": {
+    "heartsPerPet": 5,
+    "heartLifetimeMs": 1200
+  }
+}

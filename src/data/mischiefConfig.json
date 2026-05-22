@@ -1,0 +1,164 @@
+{
+  "poop": {
+    "enabled": true,
+    "chance": 0.12,
+    "cooldownMs": 60000,
+    "maxCount": 5,
+    "window": {
+      "width": 56,
+      "height": 56
+    }
+  },
+  "food": {
+    "enabled": true,
+    "maxCount": 5,
+    "lifetimeMs": 30000,
+    "attractRadiusPx": 900,
+    "window": {
+      "width": 56,
+      "height": 56
+    },
+    "types": {
+      "treat": {
+        "label": "간식"
+      },
+      "fish": {
+        "label": "생선"
+      },
+      "bowl": {
+        "label": "밥그릇"
+      }
+    }
+  },
+  "laserToy": {
+    "enabled": true,
+    "durationMs": 15000,
+    "manualAutoTimeoutEnabled": false,
+    "manualDurationMs": 60000,
+    "moveIntervalMinMs": 500,
+    "moveIntervalMaxMs": 1200,
+    "moveDistanceMinPx": 120,
+    "moveDistanceMaxPx": 360,
+    "attractRadiusPx": 1000,
+    "window": {
+      "width": 40,
+      "height": 40
+    }
+  },
+  "toys": {
+    "maxCount": 5,
+    "window": {
+      "width": 48,
+      "height": 48
+    },
+    "yarn": {
+      "lifetimeMs": 30000,
+      "maxHits": 3,
+      "moveDistanceMinPx": 70,
+      "moveDistanceMaxPx": 150,
+      "hitCooldownMs": 850,
+      "window": {
+        "width": 48,
+        "height": 48
+      },
+      "moveDurationMinMs": 800,
+      "moveDurationMaxMs": 1200
+    },
+    "box": {
+      "lifetimeMs": 70000,
+      "maxHits": 1,
+      "hitCooldownMs": 1000,
+      "window": {
+        "width": 80,
+        "height": 80
+      },
+      "boxMinStayMs": 20000,
+      "boxMaxStayMs": 45000,
+      "boxKnocksToExit": 3,
+      "boxKnockCooldownMs": 350,
+      "boxAutoExitFallbackMs": 60000,
+      "boxPostExitRemoveMs": 2400
+    },
+    "catnip": {
+      "lifetimeMs": 22000,
+      "maxHits": 1,
+      "effectDurationMs": 15000,
+      "hitCooldownMs": 1000,
+      "window": {
+        "width": 48,
+        "height": 48
+      }
+    }
+  },
+  "goose": {
+    "enabled": false,
+    "defaultIntensity": "normal",
+    "resistancePixels": 130,
+    "stepMs": 16,
+    "intensities": {
+      "weak": {
+        "label": "약함",
+        "pullDistance": {
+          "min": 60,
+          "max": 100
+        },
+        "durationMs": {
+          "min": 400,
+          "max": 700
+        },
+        "cooldownMs": 30000,
+        "chance": 0.08
+      },
+      "normal": {
+        "label": "보통",
+        "pullDistance": {
+          "min": 100,
+          "max": 180
+        },
+        "durationMs": {
+          "min": 600,
+          "max": 1000
+        },
+        "cooldownMs": 20000,
+        "chance": 0.16
+      },
+      "strong": {
+        "label": "강함",
+        "pullDistance": {
+          "min": 160,
+          "max": 260
+        },
+        "durationMs": {
+          "min": 900,
+          "max": 1400
+        },
+        "cooldownMs": 12000,
+        "chance": 0.24
+      }
+    },
+    "messages": {
+      "start": [
+        "잡았다냥!",
+        "잠깐만!",
+        "이리 와!"
+      ],
+      "running": [
+        "이리 와!",
+        "놓치지 않을 거야!"
+      ],
+      "success": [
+        "히히",
+        "잡았다냥!"
+      ],
+      "resisted": [
+        "알았어 안 할게!"
+      ],
+      "quiet": [
+        "지금은 조용히 있을래..."
+      ],
+      "unavailable": [
+        "이 환경에서는 커서 장난을 못 해..."
+      ]
+    }
+  }
+}
